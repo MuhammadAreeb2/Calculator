@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- CSS only -->
+    <link rel="stylesheet" href="path/to/bootstrap/css/bootstrap.min.css">
+<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+   <link rel="stylesheet" href="style.css "> 
+<title>Calculator</title>
+</head>
+<body>
+   
+    <div class="main container">
+      <nav class="navbar navbar-dark bg-dark  ">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">Calculator</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+                <div class="offcanvas-header">
+                  <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Scientific Calculator</h5>
+                  <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                  <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="#dmas">DMAS<i class="fa-solid fa-calculator"></i></a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">About</a>
+                    </li> 
+                  </ul>
+                 
+                </div>
+              </div>
+            </div>
+          </nav>
+
+      <div class="saman" >
+       <!-- <marquee behavior="alternate" direction="left"> <h2 style="color: #ffff;">Scientific Calculator</h2></marquee> -->
+        <div class="calculator" id="dmas">
+          <div ><input  class="inp" id="result" type="text"></div>
+          <div>
+      <div><button class=" btn clr" onclick="getclr()"><strong> C </strong></button>
+      <button class="btn divide" onclick="getnum('/')"> <strong> / </strong></button>
+    </div>
+    <div> 
+      <button class="btn" onclick="getnum('9')"><strong>9</strong></button> 
+    <button class="btn" onclick="getnum('8')"><strong>8</strong></button>
+     <button class="btn" onclick="getnum('7')"><strong>7</strong></button>
+      <button class="btn mult " onclick="getnum('*')"><strong>*</strong></button>
+    </div>
+    <div> 
+      <button class="btn" onclick="getnum('6')"><strong> 6 </strong></button> 
+    <button class="btn" onclick="getnum('5')"><strong>5</strong></button>
+     <button class="btn" onclick="getnum('4')"><strong>4</strong></button>
+      <button class="btn subs "onclick="getnum('-')"><strong>-</strong></button>
+    </div>
+    <div> 
+      <button class="btn" onclick="getnum('3')"><strong>3</strong></button> 
+    <button class="btn" onclick="getnum('2')"><strong>2</strong></button>
+     <button class="btn" onclick="getnum('1')"><strong>1</strong></button>
+      <button class="btn add"onclick="getnum('+')"><strong>+</strong></button>
+    </div>
+    <div> 
+      <button class="btn zero" onclick="getnum('0')"><strong>0</strong></button> 
+    <button class="btn equal"onclick="getresult()" ><strong>=</strong></button>
+  </div>
+    </div>
+    </div>
+    </div>
+
+<script src="app.js"></script>
+
+    <!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+</body>
+</html>
